@@ -33,6 +33,7 @@ auth.log 	Authentication attempts (login success/fail)
 network.log 	Network connections (source/destination IPs, ports)
 malware.log 	Malware detection alerts (threat type, severity)
 firewall.log 	Firewall actions (allowed/blocked connections)
+
 🔍 Example Queries Used
 Filter by Source Type
 
