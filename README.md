@@ -35,41 +35,41 @@ malware.log 	Malware detection alerts (threat type, severity)
 firewall.log 	Firewall actions (allowed/blocked connections)
 
 🔍 Example Queries Used
+
 Filter by Source Type
-
 index=soc_index sourcetype="auth.logs"
+
 Find failed logins
-
 index=soc_index sourcetype="auth.logs" status=failed
+
 Brute force attempts from same IP
-
 index=soc_index sourcetype="auth.logs" status=failed | stats count by user, ip | where count >= 3
+
 Try filtering for unusual ports:
-
 index=soc_index sourcetype="network_logs" dest_port=4444
+
 High & Critical Malware Alerts
-
 index=soc_index sourcetype="malware_logs" severity=High OR severity=Critical
+
 Blocked connections by source IP
-
 index=soc_index sourcetype="firewall_logs" action=Blocked
+
 External Authentication Attempts
-
 index=soc_index sourcetype="auth.logs" | search NOT ip="192.168.*"
+
 Frequent Firewall Blocks
-
 index=soc_index sourcetype="firewall_logs" action=Blocked | stats count by src_ip | sort – count
+
 Failed Logins by User
-
 index=soc_index sourcetype="auth.logs" status=failed | stats count by user
-Failed Malware Remediation
 
+Failed Malware Remediation
 index=soc_index sourcetype="malware_logs" status=blocked
 
 Unusual Network Port
 index=soc_index sourcetype="network_logs" NOT dest_port=22 NOT dest_port=80 NOT dest_port=443
-Classify Alerts
 
+Classify Alerts
 • IP, user, host • Description (e.g., brute force, malware) • Priority (High, Medium, Low)
 
 Incident ID Description Source Type Host/IP Priority Action INC001 Multiple failed logins auth.logs 203.0.113.5 High Block IP, reset password INC002 Ransomware detected malware_logs PC-45 Critical Isolate, clean, patch INC003 Suspicious port used network_logs 192.168.1.20 Medium Investigate
