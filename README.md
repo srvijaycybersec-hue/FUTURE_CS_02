@@ -14,18 +14,18 @@ Program: Future Interns - Cybersecurity Internship
 Task: Security Alert Monitoring & Incident Response
 ✅ Tasks Performed
 
-    Set up a SIEM Tool: Splunk Free Trial used to ingest, parse, and analyze log data.
-    Prepared & Uploaded Logs: Created and uploaded simulated logs (auth.log, network.log, malware.log, firewall.log).
-    Analyzed Security Alerts: Ran SPL (Search Processing Language) queries to detect suspicious activities.
-    Classified Incidents: Categorized alerts by severity (High, Medium, Low) for triage.
-    Created Visual Dashboards: Built Splunk dashboards to visualize alerts and trends.
-    Drafted Incident Response: Prepared a detailed Incident Response Report with evidence, impact, and remediation suggestions.
+   Set up a SIEM Tool: Splunk Free Trial used to ingest, parse, and analyze log data.
+   Prepared & Uploaded Logs: Created and uploaded simulated logs (auth.log, network.log, malware.log, firewall.log).
+   Analyzed Security Alerts: Ran SPL (Search Processing Language) queries to detect suspicious activities.
+   Classified Incidents: Categorized alerts by severity (High, Medium, Low) for triage.
+   Created Visual Dashboards: Built Splunk dashboards to visualize alerts and trends.
+   Drafted Incident Response: Prepared a detailed Incident Response Report with evidence, impact, and remediation suggestions.
 
 🛠️ Tools Used
 
-    Splunk Enterprise (Free Trial) — SIEM for log ingestion, analysis, and dashboards.
-    Sample Logs — Auth logs, network logs, malware logs, firewall logs.
-    Google Docs / MS Word — For drafting the incident response report.
+   Splunk Enterprise (Free Trial) — SIEM for log ingestion, analysis, and dashboards.
+   Sample Logs — Auth logs, network logs, malware logs, firewall logs.
+   Google Docs / MS Word — For drafting the incident response report.
 
 📁 Log Files Included
 Log File 	Description
