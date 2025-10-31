@@ -95,3 +95,29 @@ index=soc_index sourcetype="malware_logs" status=Failed
 
 # Unusual network ports
 index=soc_index sourcetype="network_logs" NOT dest_port=22 NOT dest_port=80 NOT dest_port=443
+
+Classify Alerts
+
+• IP, user, host • Description (e.g., brute force, malware) • Priority (High, Medium, Low)
+
+Incident ID Description Source Type Host/IP Priority Action INC001 Multiple failed logins auth.logs 203.0.113.5 High Block IP, reset password INC002 Ransomware detected malware_logs PC-45 Critical Isolate, clean, patch INC003 Suspicious port used network_logs 192.168.1.20 Medium Investigate
+🚩 How to Run This Project
+
+Install Splunk (free trial) locally or on a VM.
+
+Upload sample log files via Settings > Add Data > Upload.
+
+Create an index, e.g., soc_index.
+
+Use Search & Reporting to test your SPL queries.
+
+Save searches as Dashboard Panels to visualize results.
+
+Monitor and analyze alerts from the dashboard.
+Future Enhancements
+• Automate log ingestion using forwarders.
+• Add real-time alert notifications with emails or Slack integration.
+• Integrate threat intelligence feeds to correlate IOCs.
+• Implement playbooks for automated incident response actions.
+• Improve dashboards with geo-location mapping and advanced visualizations.
+• Expand to additional log sources (Windows Event Logs, Cloud Logs)
