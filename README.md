@@ -64,37 +64,37 @@ The goal of this project is to **monitor security alerts**, **analyze suspicious
 
 
 # Filter by Source Type
-index=soc_index sourcetype="auth.logs"
+index="soc_analyst" source="auth.log" sourcetype="auth_logs"
 
 # Find failed logins
-index=soc_index sourcetype="auth.logs" status=failed
+index="soc_analyst" source="auth.log" sourcetype="auth_logs" status=failed
 
 # Brute force attempts from same IP
-index=soc_index soruce="auth.log" sourcetype="auth.logs" status=failed | stats count by user, ip | where count >= 3
+index="soc_analyst" soruce="auth.log" sourcetype="auth_logs" status=failed | stats count by user, ip | where count >= 3
 
 # Filter for unusual ports
 index=* source="network.log" sourcetype="network_logs" DPT=3389 | stats count by DST
 
 # High & Critical malware alerts
-index=soc_index sourcetype="malware_logs" severity=High OR severity=Critical
+index="soc_analyst" source="malware.log" sourcetype="malware_logs"  severity=High OR severity=Critical
 
 # Blocked connections by source IP
-index=soc_index sourcetype="firewall_logs" action=Blocked
+index="soc_analyst" source="firewall.log" sourcetype="fw_logs" UFW BLOCK
 
 # External authentication attempts
-index=soc_index sourcetype="auth.logs" | search NOT ip="192.168.*"
+index="soc_analyst" source="auth.log" sourcetype="auth_logs" | search NOT ip="192.168.*"
 
 # Frequent firewall blocks
-index=soc_index sourcetype="firewall_logs" action=Blocked | stats count by src_ip | sort - count
+index="soc_analyst" source="firewall.log" sourcetype="fw_logs" UFW BLOCK  | stats count by SRC | sort - count
 
 # Failed logins by user
-index=soc_index sourcetype="auth.logs" status=failed | stats count by user
+index=soc_analyst source="auth.log" sourcetype="auth_logs" status=failed | stats count by user
 
-# Failed malware remediation
-index=soc_index sourcetype="malware_logs" status=Failed
+# Malware remediation
+index="soc_analyst" source="malware.log" sourcetype="malware_logs" action=quarantined
 
 # Unusual network ports
-index=soc_index sourcetype="network_logs" NOT dest_port=22 NOT dest_port=80 NOT dest_port=443
+index="soc_analyst" source="network.log" sourcetype="network_logs" NOT DPT=22 NOT DPT=80 NOT DPT=443
 
 Classify Alerts
 
