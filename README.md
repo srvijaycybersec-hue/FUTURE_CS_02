@@ -70,7 +70,7 @@ index=soc_index sourcetype="auth.logs"
 index=soc_index sourcetype="auth.logs" status=failed
 
 # Brute force attempts from same IP
-index=soc_index sourcetype="auth.logs" status=failed | stats count by user, ip | where count >= 3
+index=soc_index soruce="auth.log" sourcetype="auth.logs" status=failed | stats count by user, ip | where count >= 3
 
 # Filter for unusual ports
 index=* source="network.log" sourcetype="network_logs" DPT=3389 | stats count by DST
