@@ -73,7 +73,7 @@ index=soc_index sourcetype="auth.logs" status=failed
 index=soc_index sourcetype="auth.logs" status=failed | stats count by user, ip | where count >= 3
 
 # Filter for unusual ports
-index=soc_index sourcetype="network_logs" dest_port=4444
+index=* source="network.log" sourcetype="network_logs" DPT=3389 | stats count by DST
 
 # High & Critical malware alerts
 index=soc_index sourcetype="malware_logs" severity=High OR severity=Critical
