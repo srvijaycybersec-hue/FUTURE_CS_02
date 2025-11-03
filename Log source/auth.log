@@ -1,0 +1,68 @@
+Oct 31 00:00:00 ubuntu sshd[1000]: Accepted password for root from 10.10.10.50 port 30000 ssh2
+Oct 31 00:05:00 ubuntu sshd[1001]: Accepted password for ops from 198.51.100.23 port 30001 ssh2
+Oct 31 00:10:00 ubuntu sshd[1002]: Failed password for invalid user guest from 192.168.1.21 port 40002 ssh2
+Oct 31 00:15:00 ubuntu sshd[1003]: Accepted password for devops from 192.168.1.21 port 30003 ssh2
+Oct 31 00:20:00 ubuntu sshd[1004]: Accepted password for john from 192.168.1.21 port 30004 ssh2
+Oct 31 00:25:00 ubuntu sudo:  devops : TTY=pts/0 ; PWD=/home/svc_backup ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 31 00:30:00 ubuntu sshd[1006]: Accepted password for root from 192.168.1.45 port 30006 ssh2
+Oct 31 00:35:00 ubuntu sshd[1007]: Accepted publickey for ops from 203.0.113.8 port 35007 ssh2
+Oct 31 00:40:00 ubuntu sshd[1008]: Accepted password for root from 203.0.113.8 port 30008 ssh2
+Oct 31 00:45:00 ubuntu sshd[1009]: Connection closed by invalid user test 198.51.100.23 port 41009 [preauth]
+Oct 31 00:50:00 ubuntu sshd[1010]: Accepted password for root from 198.51.100.23 port 30010 ssh2
+Oct 31 00:55:00 ubuntu systemd-logind[645]: New session 31 of user ops.
+Oct 31 01:00:00 ubuntu sshd[1012]: Failed password for invalid user guest from 192.168.1.21 port 40012 ssh2
+Oct 31 01:05:00 ubuntu sshd[1013]: Accepted password for mary from 10.0.0.24 port 30013 ssh2
+Oct 31 01:10:00 ubuntu sshd[1014]: Accepted password for john from 10.0.0.24 port 30014 ssh2
+Oct 31 01:15:00 ubuntu sshd[1015]: Accepted password for guest from 203.0.113.8 port 30015 ssh2
+Oct 31 01:20:00 ubuntu sshd[1016]: Accepted password for john from 10.10.10.50 port 30016 ssh2
+Oct 31 01:25:00 ubuntu sshd[1017]: Accepted password for admin from 203.0.113.8 port 30017 ssh2
+Oct 31 01:30:00 ubuntu sshd[1018]: Accepted password for john from 203.0.113.8 port 30018 ssh2
+Oct 31 01:35:00 ubuntu sshd[1019]: Accepted password for admin from 10.0.0.24 port 30019 ssh2
+Oct 31 01:40:00 ubuntu sudo:  svc_backup : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 31 01:45:00 ubuntu sshd[1021]: Accepted password for svc_backup from 10.10.10.50 port 30021 ssh2
+Oct 31 01:50:00 ubuntu sshd[1022]: Failed password for invalid user guest from 203.0.113.8 port 40022 ssh2
+Oct 31 01:55:00 ubuntu sshd[1023]: Accepted password for svc_backup from 10.0.0.24 port 30023 ssh2
+Oct 31 02:00:00 ubuntu sshd[1024]: Accepted password for john from 10.0.0.24 port 30024 ssh2
+Oct 31 02:05:00 ubuntu sshd[1025]: Accepted password for root from 192.168.1.21 port 30025 ssh2
+Oct 31 02:10:00 ubuntu sshd[1026]: Connection closed by invalid user test 192.168.1.21 port 41026 [preauth]
+Oct 31 02:15:00 ubuntu sshd[1027]: Accepted publickey for ops from 192.168.1.45 port 35027 ssh2
+Oct 31 02:20:00 ubuntu sshd[1028]: Accepted password for mary from 10.10.10.50 port 30028 ssh2
+Oct 31 02:25:00 ubuntu sshd[1029]: Accepted password for mary from 10.10.10.50 port 30029 ssh2
+Oct 31 02:30:00 ubuntu sshd[1030]: Accepted password for guest from 192.168.1.21 port 30030 ssh2
+Oct 31 02:35:00 ubuntu sshd[1031]: Accepted password for john from 198.51.100.23 port 30031 ssh2
+Oct 31 02:40:00 ubuntu sshd[1032]: Failed password for invalid user guest from 192.168.1.21 port 40032 ssh2
+Oct 31 02:45:00 ubuntu sshd[1033]: Accepted password for guest from 192.168.1.21 port 30033 ssh2
+Oct 31 02:50:00 ubuntu systemd-logind[645]: New session 54 of user devops.
+Oct 31 02:55:00 ubuntu sudo:  john : TTY=pts/0 ; PWD=/home/mary ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 31 03:00:00 ubuntu sshd[1036]: Accepted password for mary from 192.168.1.45 port 30036 ssh2
+Oct 31 03:05:00 ubuntu sshd[1037]: Accepted password for john from 198.51.100.23 port 30037 ssh2
+Oct 31 03:10:00 ubuntu sshd[1038]: Accepted password for svc_backup from 10.0.0.24 port 30038 ssh2
+Oct 31 03:15:00 ubuntu sshd[1039]: Accepted password for john from 203.0.113.8 port 30039 ssh2
+Oct 31 03:20:00 ubuntu sshd[1040]: Accepted password for mary from 10.0.0.24 port 30040 ssh2
+Oct 31 03:25:00 ubuntu sshd[1041]: Accepted password for root from 192.168.1.21 port 30041 ssh2
+Oct 31 03:30:00 ubuntu sshd[1042]: Failed password for invalid user guest from 203.0.113.8 port 40042 ssh2
+Oct 31 03:35:00 ubuntu sshd[1043]: Connection closed by invalid user test 203.0.113.8 port 41043 [preauth]
+Oct 31 03:40:00 ubuntu sshd[1044]: Accepted password for root from 10.10.10.50 port 30044 ssh2
+Oct 31 03:45:00 ubuntu sshd[1045]: Accepted password for ops from 10.0.0.24 port 30045 ssh2
+Oct 31 03:50:00 ubuntu sshd[1046]: Accepted password for john from 10.0.0.24 port 30046 ssh2
+Oct 31 03:55:00 ubuntu sshd[1047]: Accepted publickey for guest from 192.168.1.21 port 35047 ssh2
+Oct 31 04:00:00 ubuntu sshd[1048]: Accepted password for admin from 192.168.1.21 port 30048 ssh2
+Oct 31 04:05:00 ubuntu sshd[1049]: Accepted password for guest from 10.0.0.24 port 30049 ssh2
+Oct 31 04:10:00 ubuntu sudo:  guest : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 31 04:15:00 ubuntu sshd[1051]: Accepted password for svc_backup from 192.168.1.21 port 30051 ssh2
+Oct 31 04:20:00 ubuntu sshd[1052]: Failed password for invalid user guest from 192.168.1.21 port 40052 ssh2
+Oct 31 04:25:00 ubuntu sshd[1053]: Accepted password for root from 10.10.10.50 port 30053 ssh2
+Oct 31 04:30:00 ubuntu sshd[1054]: Accepted password for svc_backup from 10.0.0.24 port 30054 ssh2
+Oct 31 04:35:00 ubuntu sshd[1055]: Accepted password for devops from 203.0.113.8 port 30055 ssh2
+Oct 31 04:40:00 ubuntu sshd[1056]: Accepted password for john from 192.168.1.45 port 30056 ssh2
+Oct 31 04:45:00 ubuntu systemd-logind[645]: New session 77 of user john.
+Oct 31 04:50:00 ubuntu sshd[1058]: Accepted password for ops from 10.0.0.24 port 30058 ssh2
+Oct 31 04:55:00 ubuntu sshd[1059]: Accepted password for guest from 192.168.1.45 port 30059 ssh2
+Oct 31 05:00:00 ubuntu sshd[1060]: Connection closed by invalid user test 192.168.1.45 port 41060 [preauth]
+Oct 31 05:05:00 ubuntu sshd[1061]: Accepted password for mary from 198.51.100.23 port 30061 ssh2
+Oct 31 05:10:00 ubuntu sshd[1062]: Failed password for invalid user guest from 192.168.1.45 port 40062 ssh2
+Oct 31 05:15:00 ubuntu sshd[1063]: Accepted password for devops from 192.168.1.45 port 30063 ssh2
+Oct 31 05:20:00 ubuntu sshd[1064]: Accepted password for admin from 10.10.10.50 port 30064 ssh2
+Oct 31 05:30:00 IR_SYSTEM: Incident ticket IR-2025-10031-01 created by SOC Analyst - suspected brute force on sshd from 203.0.113.8
+Oct 31 05:35:00 IR_ACTION: Blocked IP 203.0.113.8 at perimeter firewall (rule id fw_block_2031138)
+Oct 31 05:40:00 IR_ACTION: User 'guest' account locked (auto-block policy)
