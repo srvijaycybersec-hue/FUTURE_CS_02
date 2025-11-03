@@ -67,7 +67,7 @@ The goal of this project is to **monitor security alerts**, **analyze suspicious
 index="soc_analyst" source="auth.log" sourcetype="auth_logs"
 
 # Find failed logins
-index="soc_analyst" source="auth.log" sourcetype="auth_logs" status=failed
+index=_* OR index=* source="auth.log" sourcetype="auth_logs" status=failed
 
 # Brute force attempts from same IP
 index="soc_analyst" soruce="auth.log" sourcetype="auth_logs" status=failed | stats count by user, ip | where count >= 3
